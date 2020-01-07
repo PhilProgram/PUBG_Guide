@@ -1,0 +1,429 @@
+@charset "UTF-8";
+
+/* לא להכניס קוד לפני שורה זו */
+ 
+body {
+  font-weight: 400;
+  font-family: 'Cinzel', sans-serif;
+  
+  line-height: 1.4;
+  margin: 0; /* לא לשנות */
+  background-color:darkgrey;
+  /* פוטר דביק: */
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+h1 { 
+  margin: 0; /* שנו את השורה אם אתם רוצים רווח  לפני ואחרי הכותרת */
+ 
+}
+div.column.middle>imgclass {
+    float: right;
+    padding-top:100px;
+}
+/* לא לשנות או למחוק את הכללים האלו: */
+img, iframe {
+  border: 0;
+}
+.column.middle img
+{
+    padding-top: 2.5px;
+    padding-bottom: 25px;
+}
+img {
+  max-width: 100%;
+	width: auto;
+	height: auto;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+/* עד כאן לא לשנות */
+
+a {
+  color: #087ab3; /* שנו את הצבע - לדגום */
+}
+
+/* פריסת הדף */
+
+/* מירכוז התוכן */
+header, main, footer {
+    
+  padding: 1em calc(50% - 480px);
+}
+
+@media (max-width: 980px) {
+  header, main, footer  {
+    padding: 1em 0.5em;
+  }
+}
+
+header {
+    font-size: 22px;
+    height: 50px;
+  border-bottom: 0.2em solid #e6b619;  /* שנו את הגבול הזה */
+  background-image:url(img/congruent_outline.png);
+  /* יישור הלוגו והניווט לשני הצדדים */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer {
+    font-size: 18px;
+  border-top: 0.2em solid #e6b619;
+  background-image: url(img/congruent_outline.png); /* שנו את הרקע הזה */
+  color: whitesmoke; /* צבע לבן - שנו אם צבע הרקע לא כהה */
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+a.button{
+    color: brown;
+    display: inline-block;
+    padding: 5px 20px;
+    text-decoration: none;
+    border: 2px solid #810502;
+}
+a.button:hover
+{
+    text-decoration: underline;
+    background-color:lightgray;
+   
+    
+}
+
+p
+{
+    font-size: 24px;
+}
+
+.text a
+{
+    color:#FF0000;
+    
+}
+
+.centertext {
+    text-align: center;
+}
+
+/* ראש האתר */
+.logo {
+    align-content: flex-start;
+  max-width: 2.5em;
+}
+
+.main
+{
+   background-color: black;
+}
+.main-nav ul {
+  display: flex;
+    justify-content: space-between;
+     font-family: 'Cinzel', serif;
+}
+.main-nav a {
+  display: block;
+  color: white; /* שנו את הצבע הזה */
+  padding: 0.8em; /* שנו את הרווח הזה */
+}
+main .p a{
+  color:black;
+}
+.main-nav .current a {
+color: #F2a900; /* שנו את הסגנון הזה */
+    
+ 
+}
+.body .main a
+{
+    color:darkslateblue;
+}
+.main-nav a:hover{
+    
+   
+    color:#F2a900;
+}
+
+.text
+{
+    font-family: 'Yantramanav', sans-serif;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Create three unequal columns that floats next to each other */
+.header h1{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    padding: 20px;
+    text-decoration: underline;
+    
+    
+}
+
+/*  כ*********************************************/
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  font-family: cursive;
+   width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 70%;
+}
+
+
+.gap img
+{
+    display: inline-block;
+  margin: 20px 20px;
+}
+.smallimage
+{
+    width:30%;
+    padding:10px;
+}
+.column.middle a
+{
+    color:darkslateblue;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.iconlist
+{
+   display:inline-block;
+    width: 100%;
+     text-align:center;
+     padding-top: 50px;
+
+  padding-bottom: 50px;
+  
+}
+
+.footericons i
+{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.iconlist i
+{
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+/*  כ*********************************************/
+
+.liststyle ul {
+  
+  
+  display:inline-block;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.gap a
+{
+    color:darkmagenta;
+}
+.dropdown-content a {
+  color: lightgray;;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.gap {
+   
+    padding: 1em 0 1.5em;
+    margin: 1em 0;
+}
+
+/*  כ*********************************************/
+.simpletext
+{
+
+    font-family: 'Crimson Text', serif;
+}
+
+
+.artlink a:link
+{
+    color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+.artlink a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+.artlink a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.artlink a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+#myDIV {
+  width:auto;
+  height: 600px;
+  background: red;
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
+.anchor{
+position: relative;
+padding-top: 100px; //(whatever distance from the top of the page you want)
+}
+
+
+
+.movingrec
+{
+    width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+}
+
+/* Standard syntax */
+@keyframes example {
+    
+ 
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.simpletext {
+ text-indent: 2em;
+} 
+.quoteclass
+{
+    
+    color: #181818;
+    padding: 0px;
+    font-size: 22px;
+    font-family: 'Crimson Text', serif;
+    font-weight: normal;
+    padding-bottom: 0px;
+    line-height: 21px;
+
+}
+/*  כללי עזר */
+.alignleft {
+  float: left;
+  margin-right: 1em;
+}
+.alignright {
+  float: right;
+  margin-left: 1em;
+}
+.aligncenter {
+  display: table;
+  margin: auto;
+}
+.centertext {
+    text-align: center;
+}
+@media (max-width:30em) {
+  .alignright {
+    max-width: 50%;
+  }
+}
+
+
+
