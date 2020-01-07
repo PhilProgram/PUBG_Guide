@@ -1,0 +1,98 @@
+#home-page{
+  height: 100%;
+  margin: 0;
+
+  
+}
+#fotorama {
+    height: 100%;
+    background-size: cover;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/trio2.jpg");
+  height: 90%;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+     font-family: 'Cinzel', serif;
+    
+  
+}
+
+.hero-image-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/contacthero.jpg");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+     font-family: 'Cinzel', serif;
+    
+}
+
+.hero-text h1
+{
+    
+     font-family: 'Cinzel', serif;
+}
+
+
+.hero-text {
+  /*text-shadow: 5px 2px #FF0000;*/
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+     font-family: 'Cinzel', serif;
+     
+}
+.hero-contact-text a
+{
+    text-shadow:none;
+    color:white;
+    
+}
+.hero-contact-text {
+   /* text-shadow: 2px 2px #0000ff;*/
+  text-align: left;
+    
+  padding-left: 50px;
+  padding-top: 50px;    
+  color: white;
+     font-family: 'Cinzel', serif;
+     
+}
+
+
+
+.hero-text a
+{
+    text-decoration: none;
+    color:lightgrey;
+     font-family: 'Cinzel', serif;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  text-emphasis-color: white;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+    -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
+     color:animation: mymove 10s infinite;
+    
+}
+
+.hero-text button:hover {
+  background-color: gray;
+  
+    -webkit-animation:none;
+    text-decoration-color: white;
+}
